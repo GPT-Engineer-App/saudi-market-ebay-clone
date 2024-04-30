@@ -33,7 +33,7 @@ const Index = () => {
             <Input placeholder={language === "ar" ? "بحث..." : "Search..."} />
             <IconButton ml={2} icon={<FaSearch />} aria-label={language === "ar" ? "بحث" : "Search"} />
           </Flex>
-          <Button leftIcon={<FaPlus />} colorScheme="blue">
+          <Button leftIcon={<FaPlus />} colorScheme="blue" onClick={() => navigate("/products")}>
             {language === "ar" ? "إضافة منتج" : "Add Product"}
           </Button>
           <Box p={5} shadow="md" borderWidth="1px">
